@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	background-color: #183065;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text {
+	text-align: center;
+	font-size: 8em;
+	background: linear-gradient(to right, #FFF 30%, #6BC4EB 40%, #5597B4 60%, #FFF 70%);
+	background-size: 200%;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+	from {
+		background-position: 200%;
+	}
+	to {
+		background-position: 0%;
+	}
+}
